@@ -1,7 +1,7 @@
 /**
  * @name OpenInApp
  * @description Adds support to open URLs in their related app and not the browser.
- * @version 1.0.0
+ * @version 1.0.1
  * @author Fluzz
  * @website https://github.com/fluzzeon/betterdiscord-OpenInApp/tree/main/
  * @source https://raw.githubusercontent.com/fluzzeon/betterdiscord-OpenInApp/main/OpenInApp.plugin.js
@@ -30,7 +30,7 @@ module.exports = class OpenInApp {
             tidal: "tidal://",
         };
 
-        clickHandler = function (e) {
+        clickHandler = (e) => {
             const origin = clickOrigin(e);
 
             if (origin.tagType === "span") {
